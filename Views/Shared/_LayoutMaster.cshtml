@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="noodp,noydir,index,follow" />
+	<meta http-equiv="Content-Security-Policy" />
+	<meta http-equiv="content-language" content="vi" />
+	<title>@ViewData["Title"]</title>
+	<meta name="description" content="@ViewData["Description"]" />
+	<meta name="keywords" content="@ViewData["Keywords"]" />
+	<meta name="author" content="H2AITS" />
+	<link rel="shortcut icon" id="link_favicon_shortcut_shop" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" id="link_favicon_shop" type="image/x-icon" href="/favicon.ico" />
+
+	<!-- Facebook, Zalo, Telegram Meta Tags -->
+	<meta property="og:image" content="/images/about.png" />
+	<meta property="og:image:alt" content="@ViewData["Title"]" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="vi" />
+	<meta property="og:title" content="@ViewData["Title"]" />
+	<meta property="og:description" content="@ViewData["Description"]" />
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="/images/about.png" />
+	<meta name="twitter:title" content="@ViewData["Title"]" />
+	<meta name="twitter:description" content="@ViewData["Description"]" />
+
+
+	<partial name="_P_Styles" />
+
+</head>
+
+<body>
+	<!--START: Loader -->
+	<partial name="_P_Loader" />
+	<!--END: Loader -->
+
+	<!--START: Page-wrapper -->
+	<div class="page-wrapper">
+
+	<!--START: Header -->
+	<partial name="P_Header" />
+	<!--END: Header -->
+
+	<!--START: Body-->
+		@RenderBody()
+	<!--END: Body-->
+	
+	<!--START: Footer-->
+	<partial name="P_Footer"/>
+	<!--END: Footer-->
+
+	</div>
+	<!--END: Page-wrapper -->
+
+	<!--START: search-popup -->
+	<partial name="_P_MenuMobile"/>
+	<!--START: search-popup -->
+
+	<partial name="_P_Scripts" />
+
+</body>
+
+</html>
